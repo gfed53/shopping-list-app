@@ -3,9 +3,6 @@ body {
 	text-align: center;
 }
 
-/* header, ul {
-	text-align: center;
-} */
 
 /* section {
 	width: 40em;
@@ -19,6 +16,29 @@ ul {
 	list-style-type: none;
 	width: 40em;
 	margin: 5em auto;
+	padding: 0;
+}
+
+li {
+	font-size: 1.1em;
+	border: 2px solid black;
+	padding: .3em;
+	margin: .5em auto;
+}
+
+li .btn {
+	position: relative;
+	bottom: .45em;
+}
+
+.btn-remove {
+	float: left;
+	right: 6em;
+}
+
+.btn-checkoff {
+	float: right;
+	left: 5.2em;
 }
 
 .dairy {
@@ -28,17 +48,17 @@ ul {
 
 .frozen {
 	color: white;
-	background-color: 
+	background-color: Green;
 }
 
 .deli {
 	color: white;
-	background-color: 
+	background-color: Red;
 }
 
 .non-food {
 	color: white;
-	background-color: 
+	background-color: BurlyWood;
 }
 
 /* .d {
