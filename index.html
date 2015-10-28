@@ -11,21 +11,33 @@
 </head>
 <body>
 	<header>
-		<h1>QuickList</h1>
-		<h2>Grocery Shopping Edition</h2>
+		<div class="container">
+			<h1>QuickList</h1>
+			<h2>Grocery Shopping Edition</h2>
+		</div>
 	</header>
-	<section class="search-bar"></section>
+	<section class="search-bar">
+		<div class="container">
+			<form class="form-inline">
+				<label for="item">Item</label>
+	    		<input type="text" class="form-control" id="item" placeholder="Enter Item">
+				<input class="btn btn-default" type="submit" value="Add Item">
+			</form>
+		</div>
+	</section>
 	<section class="shopping-list">
-		<ul>
-			<li class="dairy">Eggs</li>
-			<li class="dairy">Milk</li>
-			<li class="frozen">Ice Cream</li>
-			<li class="frozen">Dominos</li>
-			<li class="deli">Ham</li>
-			<li class="deli">Cheese</li>
-			<li class="non-food">Plates</li>
-			<li class="non-food">Cups</li>
-		</ul>
+		<div class="container">
+			<ul>
+				<li class="dairy">Eggs</li>
+				<li class="dairy">Milk</li>
+				<li class="frozen">Ice Cream</li>
+				<li class="frozen">Dominos</li>
+				<li class="deli">Ham</li>
+				<li class="deli">Cheese</li>
+				<li class="non-food">Plates</li>
+				<li class="non-food">Cups</li>
+			</ul>
+		</div>
 	</section>
 	<footer></footer>
 

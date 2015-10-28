@@ -1,14 +1,29 @@
-header, ul {
+body {
+	margin: 0 auto;
 	text-align: center;
 }
 
+/* header, ul {
+	text-align: center;
+} */
+
+/* section {
+	width: 40em;
+} */
+
+/* .search-bar {
+	text-align: center;
+} */
+
 ul {
 	list-style-type: none;
+	width: 40em;
+	margin: 5em auto;
 }
 
 .dairy {
 	color: white;
-	background-color: 
+	background-color: LightBlue;
 }
 
 .frozen {
