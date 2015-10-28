@@ -14,7 +14,7 @@ body {
 
 ul {
 	list-style-type: none;
-	width: 40em;
+	/*width: 40em;*/
 	margin: 5em auto;
 	padding: 0;
 }
@@ -59,6 +59,13 @@ li .btn {
 .non-food {
 	color: white;
 	background-color: BurlyWood;
+}
+
+@media (max-width: 800px) {
+	.container {
+		width:300px;
+	}
+
 }
 
 /* .d {
