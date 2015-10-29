@@ -65,6 +65,7 @@ h2 {
 	margin: 0 10em;
 }
 
+
 .shopping-list ul {
 	list-style-type: none;
 	/*width: 40em;*/
@@ -79,6 +80,11 @@ h2 {
 	border: 2px solid black;
 	padding: .3em;
 	/*margin: .5em auto;*/
+}
+
+.sort-btn {
+	margin-bottom: 1em;
+
 }
 
 .checkoff {
@@ -117,10 +123,9 @@ h2 {
 		width:700px;
 	}
 
-	/* header img {
+	.basket-box, .bag-box {
 		width: 4em;
 		height: 4em;
-	} */
 }
 
 @media (max-width: 637px) {
@@ -128,15 +133,31 @@ h2 {
 		width:400px;
 	}
 
+	.shopping-list {
+		margin: 0 4em;
+	}
+
+}
+
+
+
 @media (max-width: 390px) {
 	.container {
 		width:200px;
 	}
 
-	/* header img {
-		width: 2em;
-		height: 2em;
-	} */
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	.basket-box, .bag-box {
+		width: 0;
+		height: 0;
+	}
 
 }
 
