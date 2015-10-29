@@ -1,64 +1,68 @@
 body {
 	margin: 0 auto;
 	text-align: center;
+	background-color: #FCFCFC;
 }
 
+.enter-item {
+	background-color: #B3B3B3;
+}
 
-/* section {
-	width: 40em;
-} */
+h1 {
+	font-family: 'Monserrat', sans-serif;
+}
 
-/* .search-bar {
-	text-align: center;
-} */
+h2 {
+	font-family: 'Droid Sans', sans-serif;
+	font-style: italic;
+}
 
-ul {
+.shopping-list ul {
 	list-style-type: none;
 	/*width: 40em;*/
 	margin: 5em auto;
 	padding: 0;
 }
 
-li {
+.shopping-list li {
 	font-size: 1.1em;
+	font-weight: 500;
+	background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(204, 204, 204, 0.42) 100%);
 	border: 2px solid black;
+	border-radius: 2em;
 	padding: .3em;
 	margin: .5em auto;
 }
 
-li .btn {
-	position: relative;
-	bottom: .45em;
-}
-
-.btn-remove {
+.checkoff {
+	width: 1.3em;
+	height: 1em;
 	float: left;
-	right: 6em;
 }
 
-.btn-checkoff {
+.remove {
+	width: 1.3em;
+	height: 1em;
 	float: right;
-	left: 5.2em;
 }
 
 .dairy {
-	color: white;
-	background-color: LightBlue;
+	color: ;
 }
 
 .frozen {
 	color: white;
-	background-color: Green;
+	/*background-color: Green;*/
 }
 
 .deli {
 	color: white;
-	background-color: Red;
+	/*background-color: Red;*/
 }
 
 .non-food {
 	color: white;
-	background-color: BurlyWood;
+	/*background-image:*/
 }
 
 @media (max-width: 1095px) {

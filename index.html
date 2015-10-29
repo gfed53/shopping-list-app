@@ -6,93 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Droid+Sans' rel='stylesheet' type='text/css'>
 	<title>QuickList</title>
 	<link rel="stylesheet" type="text/css" href = "style.css">
 </head>
 <body>
-	<header>
-		<div class="container">
-			<h1>QuickList</h1>
-			<h2>Grocery Shopping Edition</h2>
-		</div>
-	</header>
-	<section class="search-bar">
-		<div class="container">
-			<form class="form-inline">
-				<label for="item">Item</label>
-	    		<input type="text" class="form-control" id="item" placeholder="Enter Item">
-				<input class="btn btn-default" type="submit" value="Add Item">
-			</form>
-		</div>
-	</section>
-	<section class="shopping-list">
-		
-		<ul>
-			<div class="container">		
-				
-				<li class="dairy"><input class="btn btn-default btn-remove" type="button" value="Remove">
-				Eggs
-				<input class="btn btn-default btn-checkoff" type="button" value="Check">
-				</li>
-				
-
-				
-				<li class="dairy">
-				<input class="btn btn-default btn-remove" type="button" value="Remove">
-				Milk
-				<input class="btn btn-default btn-checkoff" type="button" value="Check">
-				</li>
-				
-				<li class="frozen">
-				<input class="btn btn-default btn-remove" type="button" value="Remove">
-				Ice Cream
-				<input class="btn btn-default btn-checkoff" type="button" value="Check">
-				</li>
-				
-				<li class="frozen">
-				<input class="btn btn-default btn-remove" type="button" value="Remove">
-				Dominos
-				<input class="btn btn-default btn-checkoff" type="button" value="Check">
-				</li>
-				
-
-				
-				<li class="deli">
-				<input class="btn btn-default btn-remove" type="button" value="Remove">
-				Ham
-				<input class="btn btn-default btn-checkoff" type="button" value="Check">
-				</li>
-
-				
-
-				
-				<li class="deli">
-				<input class="btn btn-default btn-remove" type="button" value="Remove">
-				Cheese
-				<input class="btn btn-default btn-checkoff" type="button" value="Check">
-				</li>
-				
-	
-				
-				<li class="non-food">
-				<input class="btn btn-default btn-remove" type="button" value="Remove">
-				Plates
-				<input class="btn btn-default btn-checkoff" type="button" value="Check">
-				</li>
-				
-
-				
-				<li class="non-food">
-				<input class="btn btn-default btn-remove" type="button" value="Remove">
-				Cups
-				<input class="btn btn-default btn-checkoff" type="button" value="Check">
-				</li>
-				
+	<div class="container">
+		<header>
+			<div class="container">
+				<h1>QuickList</h1>
+				<h2>Grocery Shopping Edition</h2>
 			</div>
+		</header>
+		<section class="enter-item">
+			<div class="container">
+				<div class="input-group">
+			      	<input type="text" class="form-control" aria-label="...">
+				      	<div class="input-group-btn">
+					      	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category <span class="caret"></span></button>
+					        <ul class="dropdown-menu dropdown-menu-right">
+					          <li><a href="#">Dairy</a></li>
+					          <li><a href="#">Frozen</a></li>
+					          <li><a href="#">Deli</a></li>
+					          <li><a href="#">Non-Foods</a></li>
+					        </ul>
+				      	</div>
+				      	<span class="input-group-btn">
+        					<button class="btn btn-default" type="button">Enter!</button>
+      					</span>
+			</div>
+		</section>
+		<section class="shopping-list">
 			
-		</ul>
-	</section>
-	<footer></footer>
+			<ul>	
+					
+				<li class="dairy">
+					<span class="checkoff"></span>
+					Eggs
+					<span class="remove"></span>
+				</li>
+					
+
+					
+				<li class="dairy">
+					<img class="checkoff" src="images/check.png">
+					Milk
+					<span class="remove"></span>
+				</li>
+					
+				<li class="frozen">
+					<span class="checkoff"></span>
+					Ice Cream
+					<span class="remove"></span>
+				</li>
+					
+				<li class="frozen">
+					<span class="checkoff"></span>
+					Dominos
+					<span class="remove"></span>
+				</li>
+					
+
+					
+				<li class="deli">
+					<span class="checkoff"></span>
+					Ham
+					<span class="remove"></span>
+				</li>
+
+				<li class="deli">
+					<span class="checkoff"></span>
+					Cheese
+					<span class="remove"></span>
+				</li>
+						
+				<li class="non-food">
+					<span class="checkoff"></span>
+					Plates
+					<span class="remove"></span>
+				</li>
+					
+				<li class="non-food">
+					<span class="checkoff"></span>
+					Cups
+					<span class="remove"></span>
+				</li>
+			</ul>
+		</section>
+		<footer></footer>
+	</div>
 
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
