@@ -61,7 +61,13 @@ li .btn {
 	background-color: BurlyWood;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1095px) {
+	.container {
+		width:500px;
+	}
+}
+
+@media (max-width: 637px) {
 	.container {
 		width:300px;
 	}
