@@ -61,11 +61,15 @@ h2 {
 	background-color: #B3B3B3;
 } */
 
+.shopping-list {
+	margin: 0 10em;
+}
+
 .shopping-list ul {
 	list-style-type: none;
 	/*width: 40em;*/
 	margin: 5em auto;
-	padding: 0;
+	padding: inherit;
 }
 
 .shopping-list li {
@@ -90,21 +94,21 @@ h2 {
 }
 
 .dairy {
-	color: ;
+	color: DarkBlue;
 }
 
 .frozen {
-	color: white;
+	color: Teal ;
 	/*background-color: Green;*/
 }
 
 .deli {
-	color: white;
+	color: Maroon;
 	/*background-color: Red;*/
 }
 
 .non-food {
-	color: white;
+	color: DarkMagenta;
 	/*background-image:*/
 }
 
