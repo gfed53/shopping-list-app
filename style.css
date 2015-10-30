@@ -93,7 +93,7 @@ h2 {
 	float: left;
 }
 
-.remove {
+.remove-box, .remove {
 	width: 1.3em;
 	height: 1em;
 	float: right;
