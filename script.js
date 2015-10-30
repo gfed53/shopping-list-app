@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	var itemCount = 0
+	$('.remove').hide();
 	$('.enter-button').on('click', function() {
 		var shoppingItem = $('.enter-item-box').val()
 		if (shoppingItem) {
@@ -17,6 +17,17 @@ $(document).ready(function() {
 	$('.shopping-list ul').on('mouseleave', '.remove-box', function() {
 		$(this).find('.remove').hide();
 	});
+
+	$('.shopping-list ul').on('click', '.checkoff', function() {
+		var x = $(this).parent()
+		x.toggleClass('checked');
+
+	});
+
+	$('.shopping-list ul').on('click', '.remove-box', function(){
+		var x = $(this).parent()
+		x.
+	})
 
 
 
