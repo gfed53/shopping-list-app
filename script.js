@@ -6,6 +6,7 @@ $(document).ready(function() {
 
 			$('.shopping-list ul:first').append('<li> <img class="checkoff" src="images/check.png">'+ shoppingItem + '<div class="remove-box"><img class="remove" src="images/x.png"></div> </li>');
 			$('.remove').hide();
+			$('.enter-item-box').val("");
 		}
 	});
 
@@ -26,8 +27,8 @@ $(document).ready(function() {
 
 	$('.shopping-list ul').on('click', '.remove-box', function(){
 		var x = $(this).parent()
-		x.
-	})
+		x.remove();
+	});
 
 
 
