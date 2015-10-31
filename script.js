@@ -19,6 +19,14 @@ $(document).ready(function() {
 		$(this).find('.remove').hide();
 	});
 
+	$('.shopping-list ul').on('mouseenter', '.checkoff', function() {
+		$(this).css({'width': '1.5em', 'height': '1.2em'});
+	});
+
+	$('.shopping-list ul').on('mouseleave', '.checkoff', function() {
+		$(this).css({'width': '1.3em', 'height': '1em'});
+	});
+
 	$('.shopping-list ul').on('click', '.checkoff', function() {
 		var x = $(this).parent()
 		x.toggleClass('checked');
@@ -28,6 +36,10 @@ $(document).ready(function() {
 	$('.shopping-list ul').on('click', '.remove-box', function(){
 		var x = $(this).parent()
 		x.remove();
+	});
+
+	$('.clear-all-btn').on('click', function() {
+		$('.shopping-list li').remove();
 	});
 
 
