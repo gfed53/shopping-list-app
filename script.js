@@ -39,7 +39,8 @@ $(document).ready(function() {
 	});
 
 	$('.clear-all-btn').on('click', function() {
-		$('.shopping-list li').remove();
+		var x = $('.shopping-list li')
+		x.fadeOut(400, function() {x.remove();});
 	});
 
 
