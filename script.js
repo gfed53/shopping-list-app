@@ -3,7 +3,7 @@ $(document).ready(function() {
 		var shoppingItem = $('.enter-item-box').val()
 		if (shoppingItem) {
 			// $('.shopping-list ul:first').append('<li> <img class="checkoff" src="images/check.png">'+ shoppingItem + '<div class="remove-box"><img class="remove" src="images/x.png"></div> </li>');
-			$('<li> <img class="checkoff" src="images/check.png">'+ shoppingItem + '<div class="remove-box"><img class="remove" src="images/x.png"></div> </li>').hide().appendTo('.shopping-list ul:first').show('normal');
+			$('<li>' + shoppingItem + '<div class="remove-box"><img class="remove" src="images/x.png"></div> </li>').hide().appendTo('.shopping-list ul:first').show('normal');
 			// $('.remove').hide();
 			$('.enter-item-box').val("");
 		}
@@ -26,7 +26,7 @@ $(document).ready(function() {
 		$(this).animate({'width': '1.3em', 'height': '1em'}, 500);
 	});*/
 
-	$('.shopping-list li').on('click', function() {
+	$('.shopping-list ul').on('click', 'li', function() {
 		$(this).toggleClass('checked');
 		
 	});

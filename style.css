@@ -82,6 +82,10 @@ h2 {
 	/*margin: .5em auto;*/
 }
 
+.shopping-list li:hover {
+	cursor: pointer;
+}
+
 .sort-btn {
 	margin-bottom: 1em;
 
