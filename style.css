@@ -126,6 +126,8 @@ h2 {
 
 ul > .checked {
 	text-decoration: line-through;
+	background-color: Black;
+	color: White;
 	font-weight: 100;
 }
 
