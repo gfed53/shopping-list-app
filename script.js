@@ -27,9 +27,16 @@ $(document).ready(function() {
 	});*/
 
 	$('.shopping-list ul').on('click', 'li', function() {
-		$(this).toggleClass('checked');
+		$(this).toggleClass('checked', 1000);
 		
 	});
+/*
+	$('.shopping-list ul').on('click', 'li', function() {
+		$(this).animate({ 'text-decoration': 'line-through',
+	'background-color': 'Black',
+	'color' : 'White',
+	'font-weight': '100'}, 400);
+	});*/
 
 	$('.shopping-list ul').on('click', '.remove-box', function(){
 		var x = $(this).parent()
