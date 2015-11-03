@@ -11,6 +11,10 @@ header {
 
 }
 
+.container {
+	width: 100%;
+}
+
 header .container {
 	margin-bottom: -3em; 
 	
@@ -61,14 +65,14 @@ h2 {
 	background-color: #B3B3B3;
 } */
 
-.shopping-list {
+/* .shopping-list {
 	margin: 0 10em;
-}
+} */
 
 
 .shopping-list ul {
 	list-style-type: none;
-	/*width: 40em;*/
+	/* width: 40em; */
 	margin: 5em auto;
 	padding: inherit;
 }
@@ -91,11 +95,11 @@ h2 {
 
 }
 
-.clear-all-btn {
+/* .clear-all-btn {
 	position: relative;
 	left: 12em;
 	bottom: 1em;
-}
+} */
 
 .checkoff {
 	width: 1.3em;
@@ -142,7 +146,7 @@ footer .container {
 
 footer .master-p {
 	font-size: 1.3em;
-	margin-top: 2em;
+	margin-top: 6em;
 }
 
 footer p {
@@ -150,9 +154,9 @@ footer p {
 }
 
 @media (max-width: 1095px) {
-	.container {
+	/* .container {
 		width:700px;
-	}
+	} */
 
 	.basket-box, .bag-box {
 		width: 4em;
@@ -160,22 +164,22 @@ footer p {
 }
 
 @media (max-width: 637px) {
-	.container {
+	/* .container {
 		width:400px;
-	}
+	} */
 
-	.shopping-list {
+	/* .shopping-list {
 		margin: 0 4em;
-	}
+	} */
 
 }
 
 
 
 @media (max-width: 390px) {
-	.container {
+	/* .container {
 		width:200px;
-	}
+	} */
 
 	h1 {
 		font-size: 2.5em;
@@ -188,6 +192,17 @@ footer p {
 	.basket-box, .bag-box {
 		width: 0;
 		height: 0;
+	}
+
+	.input-group {
+		display: table-caption;
+		top: 3em;
+		
+	}
+
+	.shopping-list li {
+		font-size: .5em;
+
 	}
 
 }
