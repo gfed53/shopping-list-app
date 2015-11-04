@@ -163,24 +163,10 @@ footer p {
 		height: 4em;
 }
 
-@media (max-width: 637px) {
-	/* .container {
-		width:400px;
-	} */
-
-	/* .shopping-list {
-		margin: 0 4em;
-	} */
-
-}
-
 
 
 @media (max-width: 390px) {
-	/* .container {
-		width:200px;
-	} */
-
+	
 	h1 {
 		font-size: 2.5em;
 	}
@@ -190,12 +176,10 @@ footer p {
 	}
 
 	.basket-box, .bag-box {
-		width: 0;
-		height: 0;
+		display: none;
 	}
 
 	.input-group {
-		display: table-caption;
 		top: 3em;
 		
 	}
@@ -203,6 +187,10 @@ footer p {
 	.shopping-list li {
 		font-size: .5em;
 
+	}
+
+	.container {
+		padding: 0;
 	}
 
 }
