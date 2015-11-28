@@ -27,7 +27,7 @@ $(document).ready(function() {
 	});*/
 
 	$('.shopping-list ul').on('click', 'li', function() {
-		$(this).toggleClass('checked', 1000);
+		$(this).toggleClass('checked');
 		
 	});
 /*
@@ -36,11 +36,11 @@ $(document).ready(function() {
 	'background-color': 'Black',
 	'color' : 'White',
 	'font-weight': '100'}, 400);
-	});*/
+	});  Can't work without jQuery.Color plugin */
 
 	$('.shopping-list ul').on('click', '.remove-box', function(){
-		var x = $(this).parent()
-		x.fadeOut(400, function() {x.remove();});
+		var parent = $(this).parent()
+		x.fadeOut(400, function() {parent.remove();});
 	});
 
 	$('.clear-all-btn').on('click', function() {
