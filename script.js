@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 	$('.shopping-list ul').on('click', '.remove-box', function(){
 		var parent = $(this).parent()
-		x.fadeOut(400, function() {parent.remove();});
+		parent.fadeOut(400, function() {parent.remove();});
 	});
 
 	$('.clear-all-btn').on('click', function() {
