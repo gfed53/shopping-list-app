@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	$('.enter-button').on('click', function() {
+	$('.enter-button').on('click', function(e) {
+		e.preventDefault();
 		var shoppingItem = $('.enter-item-box').val()
 		if (shoppingItem) {
 			// $('.shopping-list ul:first').append('<li> <img class="checkoff" src="images/check.png">'+ shoppingItem + '<div class="remove-box"><img class="remove" src="images/x.png"></div> </li>');
