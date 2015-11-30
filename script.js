@@ -28,7 +28,7 @@ $(document).ready(function() {
 	});*/
 
 	$('.shopping-list ul').on('click', 'li', function() {
-		$(this).toggleClass('checked');
+		$(this).toggleClass('checked', 400);
 		
 	});
 /*
