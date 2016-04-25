@@ -60,6 +60,10 @@ h2 {
 	width: 80%;
 }
 
+.enter-item {
+	margin-top: 3em;
+}
+
 /*Shopping List*/
 .shopping-list ul {
 	list-style-type: none;
@@ -67,7 +71,7 @@ h2 {
 	padding: inherit;
 }
 
-.shopping-list li {
+/*.shopping-list li {
 	font-size: 1.1em;
 	font-weight: 500;
 	background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(204, 204, 204, 0.42) 100%);
@@ -77,7 +81,7 @@ h2 {
 
 .shopping-list li:hover {
 	cursor: pointer;
-}
+}*/
 
 .sort-btn {
 	margin-bottom: 1em;
@@ -89,18 +93,18 @@ h2 {
 	float: left;
 }
 
-.btn-remove {
+/*.btn-remove {
 	width: .3em;
 	float: right;
 	position: relative;
 	bottom: .4em;
 	left: 1em;
-}
+}*/
 
 ul > .checked {
 	text-decoration: line-through;
-	background-color: Black;
-	color: White;
+	/*background-color: Black;*/
+	color: grey;
 	font-weight: 100;
 }
 

@@ -3,29 +3,31 @@ $(document).ready(function() {
 		e.preventDefault();
 		var shoppingItem = $('.enter-item-box').val()
 		if (shoppingItem) {
-			// $('.shopping-list ul:first').append('<li> <img class="checkoff" src="images/check.png">'+ shoppingItem + '<div class="remove-box"><img class="remove" src="images/x.png"></div> </li>');
-			$('<li>' + shoppingItem + '<button class="btn btn-default btn-remove" type="submit">X</button> </li>').hide().appendTo('.shopping-list ul:first').show('normal');
+			// var item = document.createElement('li');
+			// item.className = "mdl-list__item";
+			// item.innerHTML = "<span class=\'mdl-list__item-primary-content\'>"+
+			// 	 shoppingItem+
+			// 	 "</span>"+
+			// 	 "<span class='mdl-list__item-secondary-content'></span></li>";
+			// var button = document.createElement('button');
+			// button.className = "mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored btn-remove";
+			// button.innerHTML = "<i class='material-icons'>remove</i>";
+			var element = "<li class=\'mdl-list__item\'>"+
+				"<span class=\'mdl-list__item-primary-content\'>"+
+				 shoppingItem+
+				 "</span>"+
+				 "<span class='mdl-list__item-secondary-content'>"+
+				 "<button class='mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored btn-remove'>"+
+				 "<i class='material-icons'>remove</i>"+
+				 "</button></span></li>";
+
+			$(element).hide().appendTo('.shopping-list ul:first').show('normal');
+			// componentHandler.upgradeElement($('.shopping-list ul:last button'));
 			// $('.remove').hide();
 			$('.enter-item-box').val("");
+			console.log($('.shopping-list ul:last'));
 		}
 	});
-
-	/*$('.shopping-list ul').on('mouseenter', '.remove-box', function() {
-		$(this).find('.remove').show();
-
-	});
-
-	$('.shopping-list ul').on('mouseleave', '.remove-box', function() {
-		$(this).find('.remove').hide();
-	}); */
-
-	/*$('.shopping-list ul').on('mouseenter', '.checkoff', function() {
-		$(this).animate({'width': '1.5em', 'height': '1.2em'}, 500);
-	});
-
-	$('.shopping-list ul').on('mouseleave', '.checkoff', function() {
-		$(this).animate({'width': '1.3em', 'height': '1em'}, 500);
-	});*/
 
 	$('.shopping-list ul').on('click', 'li', function() {
 		$(this).toggleClass('checked', 400);
@@ -40,7 +42,7 @@ $(document).ready(function() {
 	});  Can't work without jQuery.Color plugin */
 
 	$('.shopping-list ul').on('click', '.btn-remove', function(){
-		var parent = $(this).parent()
+		var parent = $(this).parent().parent();
 		parent.fadeOut(400, function() {parent.remove();});
 	});
 
