@@ -1,23 +1,23 @@
+/*General*/
 body {
 	margin: 0 auto;
 	text-align: center;
 	background-color: #FCFCFC;
 }
 
-header {
-	background: url('images/background-city.jpeg') no-repeat center;
-	background-size: cover;
-	border-radius: 1em;
-
-}
-
 .container {
 	width: 100%;
 }
 
+/*Header*/
+header {
+	background: url('images/background-city.jpeg') no-repeat center;
+	background-size: cover;
+	border-radius: 1em;
+}
+
 header .container {
-	margin-bottom: -3em; 
-	
+	margin-bottom: -3em;
 }
 
 .basket-box {
@@ -29,7 +29,6 @@ header .container {
   	background-size: contain;
   	width: 7em;
   	height: 7em;
-
 }
 
 .bag-box {
@@ -41,12 +40,7 @@ header .container {
   	background-size: contain;
   	width: 7em;
   	height: 7em;
-	
 }
-
-/* h1, h2 {
-	background-color: #FCFCFC;
-} */
 
 h1 {
 	font-family: 'Monserrat', sans-serif;
@@ -61,25 +55,14 @@ h2 {
 	color: white;
 }
 
-/* .enter-item {
-	background-color: #B3B3B3;
-} */
-
-/* .shopping-list {
-	margin: 0 10em;
-} */
-
+/*Input*/
 .form-container {
 	width: 80%;
 }
 
-form {
-	/*margin-left: 7em;*/
-}
-
+/*Shopping List*/
 .shopping-list ul {
 	list-style-type: none;
-	/* width: 40em; */
 	margin: 5em auto;
 	padding: inherit;
 }
@@ -90,7 +73,6 @@ form {
 	background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(204, 204, 204, 0.42) 100%);
 	border: 2px solid black;
 	padding: .3em;
-	/*margin: .5em auto;*/
 }
 
 .shopping-list li:hover {
@@ -99,14 +81,7 @@ form {
 
 .sort-btn {
 	margin-bottom: 1em;
-
 }
-
-/* .clear-all-btn {
-	position: relative;
-	left: 12em;
-	bottom: 1em;
-} */
 
 .checkoff {
 	width: 1.3em;
@@ -114,30 +89,13 @@ form {
 	float: left;
 }
 
-.remove-box, .remove {
-	width: 1.3em;
-	height: 1em;
+.btn-remove {
+	width: .3em;
 	float: right;
+	position: relative;
+	bottom: .4em;
+	left: 1em;
 }
-
-/* .dairy {
-	color: DarkBlue;
-} */
-
-/* .frozen {
-	color: Teal ;
-	background-color: Green;
-} */
-
-/* .deli {
-	color: Maroon;
-	background-color: Red;
-} */
-
-/* .non-food {
-	color: DarkMagenta;
-	background-image:
-} */
 
 ul > .checked {
 	text-decoration: line-through;
@@ -146,9 +104,9 @@ ul > .checked {
 	font-weight: 100;
 }
 
+/*Footer*/
 footer .container {
 	border-top: 1px solid Grey;
-
 }
 
 footer .master-p {
@@ -161,16 +119,10 @@ footer p {
 }
 
 @media (max-width: 1095px) {
-	/* .container {
-		width:700px;
-	} */
-
 	.basket-box, .bag-box {
 		width: 4em;
 		height: 4em;
 }
-
-
 
 @media (max-width: 390px) {
 	
@@ -182,22 +134,16 @@ footer p {
 		font-size: 1.5em;
 	}
 
-	form {
-		/*margin: 0;*/
-	}
-
 	.basket-box, .bag-box {
 		display: none;
 	}
 
 	.input-group {
 		top: 3em;
-		
 	}
 
 	.shopping-list li {
 		font-size: .5em;
-
 	}
 
 	.container {
@@ -210,7 +156,3 @@ footer p {
 
 }
 
-/* .d {
-	color: white;
-	background-color: 
-} */

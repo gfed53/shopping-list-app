@@ -4,7 +4,7 @@ $(document).ready(function() {
 		var shoppingItem = $('.enter-item-box').val()
 		if (shoppingItem) {
 			// $('.shopping-list ul:first').append('<li> <img class="checkoff" src="images/check.png">'+ shoppingItem + '<div class="remove-box"><img class="remove" src="images/x.png"></div> </li>');
-			$('<li>' + shoppingItem + '<div class="remove-box"><img class="remove" src="images/x.png"></div> </li>').hide().appendTo('.shopping-list ul:first').show('normal');
+			$('<li>' + shoppingItem + '<button class="btn btn-default btn-remove" type="submit">X</button> </li>').hide().appendTo('.shopping-list ul:first').show('normal');
 			// $('.remove').hide();
 			$('.enter-item-box').val("");
 		}
@@ -39,7 +39,7 @@ $(document).ready(function() {
 	'font-weight': '100'}, 400);
 	});  Can't work without jQuery.Color plugin */
 
-	$('.shopping-list ul').on('click', '.remove-box', function(){
+	$('.shopping-list ul').on('click', '.btn-remove', function(){
 		var parent = $(this).parent()
 		parent.fadeOut(400, function() {parent.remove();});
 	});
