@@ -17,7 +17,7 @@ $(document).ready(function() {
 				 shoppingItem+
 				 "</span>"+
 				 "<span class='mdl-list__item-secondary-content'>"+
-				 "<button class='mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored btn-remove'>"+
+				 "<button class='mdl-button mdl-js-button mdl-button--fab mdl-button--colored btn-remove'>"+
 				 "<i class='material-icons'>remove</i>"+
 				 "</button></span></li>";
 
