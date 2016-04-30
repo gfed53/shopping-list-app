@@ -71,18 +71,6 @@ h2 {
 	padding: inherit;
 }
 
-/*.shopping-list li {
-	font-size: 1.1em;
-	font-weight: 500;
-	background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(204, 204, 204, 0.42) 100%);
-	border: 2px solid black;
-	padding: .3em;
-}
-
-.shopping-list li:hover {
-	cursor: pointer;
-}*/
-
 .sort-btn {
 	margin-bottom: 1em;
 }
@@ -92,14 +80,6 @@ h2 {
 	height: 1em;
 	float: left;
 }
-
-/*.btn-remove {
-	width: .3em;
-	float: right;
-	position: relative;
-	bottom: .4em;
-	left: 1em;
-}*/
 
 ul > .checked {
 	text-decoration: line-through;
@@ -124,8 +104,8 @@ footer p {
 
 @media (max-width: 1095px) {
 	.basket-box, .bag-box {
-		width: 4em;
-		height: 4em;
+		display: none;
+	}
 }
 
 @media (max-width: 390px) {
@@ -138,17 +118,13 @@ footer p {
 		font-size: 1.5em;
 	}
 
-	.basket-box, .bag-box {
-		display: none;
-	}
-
 	.input-group {
 		top: 3em;
 	}
 
-	.shopping-list li {
+/*	.shopping-list li {
 		font-size: .5em;
-	}
+	}*/
 
 	.container {
 		padding: 0;
