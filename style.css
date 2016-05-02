@@ -83,7 +83,6 @@ h2 {
 
 ul > .checked {
 	text-decoration: line-through;
-	/*background-color: Black;*/
 	color: grey;
 	font-weight: 100;
 }
@@ -121,10 +120,6 @@ footer p {
 	.input-group {
 		top: 3em;
 	}
-
-/*	.shopping-list li {
-		font-size: .5em;
-	}*/
 
 	.container {
 		padding: 0;
