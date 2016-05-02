@@ -107,6 +107,15 @@ footer p {
 	}
 }
 
+@media (max-width: 720px) {
+	/*Header*/
+	header {
+	background: url('images/background-city-mobile.jpeg') no-repeat center;
+	background-size: cover;
+	border-radius: 1em;
+	}	
+}
+
 @media (max-width: 390px) {
 	
 	h1 {
